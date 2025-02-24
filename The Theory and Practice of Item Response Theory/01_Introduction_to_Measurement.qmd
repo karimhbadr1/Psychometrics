@@ -62,14 +62,18 @@
 
 -   Cognitive processes used by an individual to respond to an item are not modeled in commonly used IRT models.
 
--   Similar to measuring the speed of an automatic mobile without understanding how an automobile moves
+-   Similar to measuring the speed of an automatic mobile without understanding how an automobile moves.
 
--   $y=x+2$
+-   In IRT, persons and items are located on the same continuum.
 
--   $$
-    y=x+3
-    $$ {#eq-linear}
+-   Most IRT models assume the latent variable is represented by an unidimensional continuum.
 
--    @eq-linear +2
+-   For an item to have any utility, it must be able to differentiate among persons located at different points along a continuum. This ability can be held constant or allowed to vary across instrument items.
 
--   
+-   Individuals are characterized in terms of their locations on the latent variable , and, at a minimum, items are characterized with respect to their locations and capacity to discriminate among persons.
+
+-   The gist of IRT is the (logistic or multinational) regression of observed item responses \[DV\] on the persons' locations on the latent variable and the item's latent characterization(s) \[IVs\].
+
+## Classical Test Theory
+
+-   Classical Test Theory (CTT) or True Score Theory also (like IRT)
