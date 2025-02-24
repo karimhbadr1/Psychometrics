@@ -1,0 +1,79 @@
+# Chapter 1: Introduction to Measurement
+
+-   Item Response Theory (IRT) / Latent Trait Theory / Item Characteristic Curve Theory
+
+-   Measurement: the assignment of numerals to objects or events according to rules
+
+-   IRT: variable we're measuring is considered to be continuous in nature
+
+## Measurement
+
+-   Variable or construct that cannot be observed : *latent* (example: anxiety)
+
+-   Measurement process involves deciding whether a latent variable is conceptualized as categorical, continuous, or both
+
+-   Categorical: persons differ from one another in kind on the latent variable - these latent **kinds** or categories are referred to as *latent classes*. *Latent Class Analysis* can be used to conceptualize the data. (example: has or doesn't have anxiety)
+
+-   Continuous: individuals different from one another by the **quantity** of the latent variable. So we have ends to the *latent continuum* (high versus low). *Latent Trait Theory / IRT* can be used here.
+
+-   Mix of Categorical and Continuous facets: two or more latent classes & one or more latent continua. The latent classes are subpopulations that are homogeneous with respect to the variable of interest but differ from one another in kind. With each of these classes there is a latent continuum on which the individuals within the class may be located. (Example: Class 1: severe anxiety ; Class 2: not sever anxiety + measure of anxiety quantity within each of those classes (continuum)) - *Mixture models* (e.g. mixture Rasch model) can b used here.
+
+-   We cannot observe latent variables but their existence is observed using *manifest* variables. We use them to provide an *operational definition* of the latent variable.
+
+-   Our interest is in the latent variable and its operational definition is a means to that end.
+
+-   \(1\) conceptualization of latent variable nature + (2) operational definition
+
+-   \(3\) is the correspondence between our observations of the individual's \[anxiety levels\] and their locations on the continuum and/or in a class - this is called scaling.
+
+-   *Scaling*: the process of establishing the correspondence between the observation data and the person's location on the latent variable.
+
+-   IRT is one approach to establishing this correspondence between the observation data and the persons' locations on the latent variable.
+
+## Some Measurement Issues
+
+-   Four measurement issues
+
+-   \(1\) : *consistency of the measures \[reliability\]*
+
+-   measurements with small amount of error have higher consistency / reliability
+
+-   (2): *validity*
+
+-   validity: degree to which our measures are actually manifestations of the latent variable
+
+-   A necessary but not sufficient condition for measurements to have validity is that they posses a high degree of reliability. Therefore, it is necessary to be concerned not only with the consistency our measurements, but also with their validity. Obtaining validity evidence is part of the measurement process.
+
+-   (3): *invariance*: Thurstone noted that a measuring instrument must not be seriously affecting in its measuring object by the object of measurement. In other words, we would like our measurement instrument to be independent of what it is we are measuring.
+
+-   Example given about measuring a box by using a meter stick or by using a string to measure the shortest dimension and then cutting that string and then using that cut string to measure the other dimensions and getting their measures as multiples of that short cut string. Applying this approach to 2 different boxes for example would lead to measurements that cannot be compared to one another. The box we are measuring affects our measurement instrument and our measurements would not possess the invariance property. Without invariance, our comparisons across different boxes have limited utility.
+
+-   (4): levels of measurement
+
+-   Steven's levels of measurements or Coombs's taxonomy : measurements have certain inherent properties that affect how we interpret their information
+
+-   *Ratio / Internval / Ordinal / Nominal*
+
+## Item Response Theory
+
+-   *theory:* paradigm that attempts to explain all the facts with which it can be confronted rather than in the traditional sense of explaining why a person provides a particular response to an item or how a person decides to answer (some have tried explanatory approaches though like Linear Logistic Test Model \[LLTM\]).
+
+-   IRT uses latent characterizations of individuals and items as predictors of observed patterns
+
+-   Cognitive processes used by an individual to respond to an item are not modeled in commonly used IRT models.
+
+-   Similar to measuring the speed of an automatic mobile without understanding how an automobile moves.
+
+-   In IRT, persons and items are located on the same continuum.
+
+-   Most IRT models assume the latent variable is represented by an unidimensional continuum.
+
+-   For an item to have any utility, it must be able to differentiate among persons located at different points along a continuum. This ability can be held constant or allowed to vary across instrument items.
+
+-   Individuals are characterized in terms of their locations on the latent variable , and, at a minimum, items are characterized with respect to their locations and capacity to discriminate among persons.
+
+-   The gist of IRT is the (logistic or multinational) regression of observed item responses \[DV\] on the persons' locations on the latent variable and the item's latent characterization(s) \[IVs\].
+
+## Classical Test Theory
+
+-   Classical Test Theory (CTT) or True Score Theory also (like IRT)
