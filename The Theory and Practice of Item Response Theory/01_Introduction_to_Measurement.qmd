@@ -76,4 +76,48 @@
 
 ## Classical Test Theory
 
--   Classical Test Theory (CTT) or True Score Theory also (like IRT)
+-   Classical Test Theory (CTT) or True Score Theory also (like IRT) assumes the latent variable to be continuous.
+
+-   IRT: item is unit of focus ; CTT: observed score on whole instrument is unit of focus
+
+-   Individual score $X$ is typically the unweighted sum of person's responses to individual items.
+
+-   CTT is based on true score model : relates individual's observed score to their location on the latent variable
+
+-   Assume you administer the instrument an infinite independent number of times. The mean of the observed scores is the expectation of the observed scores: $\mu_i=\varepsilon(X_i)$ . One any administration there will be an error (difference).
+
+    $$ 
+    X_i=\mu_i+E_i
+    $$ {#eq-1}
+
+-   $E_i$ is the error of measurement
+
+-   @eq-1 is known as the true score model.
+
+-   Given that the error scores are considered to be random and $\mu_i=\varepsilon(X_i)$ , then it follows that the mean error of an indivdiual across all indeependent infinite administrations is zero.
+
+-   $\mu_i$ is also represented by $T$ . $T$ represents the person's true score. Not meant to represent "truth", so we refer to it as trait score.
+
+-   A person's trait score represents their location on the latent variable of interest and is fixed for an individual and instrument.
+
+-   @eq-1 can also be represented as $$X_i=T_i+E_i$$ {#eq-2}
+
+-   The IRT person latent trait $\theta$ and the CTT person trait characterization are related based on the assumption of parallel forms for an instrument. Note: **parallel forms** (also called **equivalent forms** or **alternate forms**) refer to two or more versions of a test that measure the same psychological construct with **equal difficulty and reliability.** So each item has the same response function on all the forms.
+
+-   The expected propritons of 1s or the expected true score $\varepsilon (T)$ across the parallel forms is the average probability of a response of 1 on the instrument given the person's latent trait and an IRT model. So, the IRT $\theta$ is is the same as $\varepsilon (T)$ but has a different scale. The scale for $\varepsilon (T)$ is 0 to 1 but for $\theta$ it is $-\infty$ to $\infty$ . They are related by a monotonous increasing transformation.
+
+-   3 assumptions for CTT : (1) the errors are uncorrelated with the trait score ; (2) the errors on one instrument are not correlated with the trait scores on a different instrument ; (3) the errors on one instruemnt are not corerelted with the error scores on a different instrument. These are "weak" assumptions because they are likely to be met by data ; unlike the "strong" assumptions of IRT.
+
+-   CTT assumptions + @eq-1 form the basis of the concepts or reliability and validity coefficient.
+
+-   Index of reliability of a measurement: correlation of observed scores and trait scores
+
+-   population relaibility of instrument using variance of trait scores and observed scores: $$\rho_{XX'}= \frac{\sigma_T^2}{\sigma_X^2}$$ {#eq-3}
+
+-   The trait score variance is unknown, so we can only estimate $\rho_{XX'}$ (example: coefficient alpha)
+
+-   If you substitute $\sigma_T^2=\sigma_X^2-\sigma_E^2$ in @eq-3 , you get:
+
+    $$\sigma_E^2=\sigma_X^2(1-\rho_{XX'})$$ {#eq-4}
+
+-   
