@@ -111,7 +111,7 @@ window.Quarto = {
 <li><p>Example given about measuring a box by using a meter stick or by using a string to measure the shortest dimension and then cutting that string and then using that cut string to measure the other dimensions and getting their measures as multiples of that short cut string. Applying this approach to 2 different boxes for example would lead to measurements that cannot be compared to one another. The box we are measuring affects our measurement instrument and our measurements would not possess the invariance property. Without invariance, our comparisons across different boxes have limited utility.</p></li>
 <li><p>(4): levels of measurement</p></li>
 <li><p>Steven’s levels of measurements or Coombs’s taxonomy : measurements have certain inherent properties that affect how we interpret their information</p></li>
-<li><p><em>Ratio / Internval / Ordinal / Nominal</em></p></li>
+<li><p><em>Ratio / Interval / Ordinal / Nominal</em></p></li>
 </ul>
 </section>
 <section id="item-response-theory" class="level2">
@@ -141,20 +141,50 @@ X_i=\mu_i+E_i
 \tag{1}\]</span></span></p></li>
 <li><p><span class="math inline">\(E_i\)</span> is the error of measurement</p></li>
 <li><p><a href="#eq-1" class="quarto-xref">Equation&nbsp;1</a> is known as the true score model.</p></li>
-<li><p>Given that the error scores are considered to be random and <span class="math inline">\(\mu_i=\varepsilon(X_i)\)</span> , then it follows that the mean error of an indivdiual across all indeependent infinite administrations is zero.</p></li>
+<li><p>Given that the error scores are considered to be random and <span class="math inline">\(\mu_i=\varepsilon(X_i)\)</span> , then it follows that the mean error of an individual across all independent infinite administrations is zero.</p></li>
 <li><p><span class="math inline">\(\mu_i\)</span> is also represented by <span class="math inline">\(T\)</span> . <span class="math inline">\(T\)</span> represents the person’s true score. Not meant to represent “truth”, so we refer to it as trait score.</p></li>
 <li><p>A person’s trait score represents their location on the latent variable of interest and is fixed for an individual and instrument.</p></li>
 <li><p><a href="#eq-1" class="quarto-xref">Equation&nbsp;1</a> can also be represented as <span id="eq-2"><span class="math display">\[X_i=T_i+E_i \tag{2}\]</span></span></p></li>
 <li><p>The IRT person latent trait <span class="math inline">\(\theta\)</span> and the CTT person trait characterization are related based on the assumption of parallel forms for an instrument. Note: <strong>parallel forms</strong> (also called <strong>equivalent forms</strong> or <strong>alternate forms</strong>) refer to two or more versions of a test that measure the same psychological construct with <strong>equal difficulty and reliability.</strong> So each item has the same response function on all the forms.</p></li>
-<li><p>The expected propritons of 1s or the expected true score <span class="math inline">\(\varepsilon (T)\)</span> across the parallel forms is the average probability of a response of 1 on the instrument given the person’s latent trait and an IRT model. So, the IRT <span class="math inline">\(\theta\)</span> is is the same as <span class="math inline">\(\varepsilon (T)\)</span> but has a different scale. The scale for <span class="math inline">\(\varepsilon (T)\)</span> is 0 to 1 but for <span class="math inline">\(\theta\)</span> it is <span class="math inline">\(-\infty\)</span> to <span class="math inline">\(\infty\)</span> . They are related by a monotonous increasing transformation.</p></li>
-<li><p>3 assumptions for CTT : (1) the errors are uncorrelated with the trait score ; (2) the errors on one instrument are not correlated with the trait scores on a different instrument ; (3) the errors on one instruemnt are not corerelted with the error scores on a different instrument. These are “weak” assumptions because they are likely to be met by data ; unlike the “strong” assumptions of IRT.</p></li>
+<li><p>The expected proportions of 1s or the expected true score <span class="math inline">\(\varepsilon (T)\)</span> across the parallel forms is the average probability of a response of 1 on the instrument given the person’s latent trait and an IRT model. So, the IRT <span class="math inline">\(\theta\)</span> is is the same as <span class="math inline">\(\varepsilon (T)\)</span> but has a different scale. The scale for <span class="math inline">\(\varepsilon (T)\)</span> is 0 to 1 but for <span class="math inline">\(\theta\)</span> it is <span class="math inline">\(-\infty\)</span> to <span class="math inline">\(\infty\)</span> . They are related by a monotonous increasing transformation.</p></li>
+<li><p>3 assumptions for CTT : (1) the errors are uncorrelated with the trait score ; (2) the errors on one instrument are not correlated with the trait scores on a different instrument ; (3) the errors on one instrument are not correlated with the error scores on a different instrument. These are “weak” assumptions because they are likely to be met by data ; unlike the “strong” assumptions of IRT.</p></li>
 <li><p>CTT assumptions + <a href="#eq-1" class="quarto-xref">Equation&nbsp;1</a> form the basis of the concepts or reliability and validity coefficient.</p></li>
 <li><p>Index of reliability of a measurement: correlation of observed scores and trait scores</p></li>
-<li><p>population relaibility of instrument using variance of trait scores and observed scores: <span id="eq-3"><span class="math display">\[\rho_{XX'}= \frac{\sigma_T^2}{\sigma_X^2} \tag{3}\]</span></span></p></li>
+<li><p>population reliability of instrument using variance of trait scores and observed scores: <span id="eq-3"><span class="math display">\[\rho_{XX'}= \frac{\sigma_T^2}{\sigma_X^2} \tag{3}\]</span></span></p></li>
 <li><p>The trait score variance is unknown, so we can only estimate <span class="math inline">\(\rho_{XX'}\)</span> (example: coefficient alpha)</p></li>
 <li><p>If you substitute <span class="math inline">\(\sigma_T^2=\sigma_X^2-\sigma_E^2\)</span> in <a href="#eq-3" class="quarto-xref">Equation&nbsp;3</a> , you get:</p>
 <p><span id="eq-4"><span class="math display">\[\sigma_E^2=\sigma_X^2(1-\rho_{XX'}) \tag{4}\]</span></span></p></li>
-<li></li>
+<li><p>Standard Error of Measurement (SEM) is the square root of <span class="math display">\[\sigma_E^2\]</span> . It is the standard deviation of the errors of measurement associated with the observed scores.</p></li>
+<li><p>Because the latent trait is unknown, so error is unknown, so <a href="#eq-1" class="quarto-xref">Equation&nbsp;1</a> and <a href="#eq-2" class="quarto-xref">Equation&nbsp;2</a> have two unknowns. This means that we cannot disprove them.</p></li>
+<li><p>Unlike CTT, in IRT, we can engage in model-data fit analysis. In CTT, we assume the model to be true.</p></li>
+<li><p>In CTT, person measurement is dependent on the instrument’s characteristics. The heterogeneity or lack thereof of the observed scores affects the reliability an SEM.</p></li>
+<li><p><a href="#eq-3" class="quarto-xref">Equation&nbsp;3</a> and <a href="#eq-4" class="quarto-xref">Equation&nbsp;4</a> are not solely properties of the instrument, but are affected by the sample.</p></li>
+<li><p>This means that Thurstone’s idea of invariance does not exist in CTT. In contrast, in IRT, it is possible to have invariance of both person and item characterizations.</p></li>
+</ul>
+</section>
+<section id="latent-class-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="latent-class-analysis">Latent Class Analysis</h2>
+<ul>
+<li><p>In LCA, unlike IRT, the latent variable is assumed to be categorical.</p></li>
+<li><p>The latent variable consists of a set of mutually exclusive and exhaustive latent classes.</p></li>
+<li><p>The comparison of individuals involves comparing their latent class membership rather than their location on a continuous latent variable.</p></li>
+<li><p>Mixture Models can conceive of situations where we have both latent classes and continuous continuum : LCA+IRT</p></li>
+<li><p>Both LCA and IRT are cases of LSA (Latent Structure Analysis)</p></li>
+<li><p>LCA determines the number of latent classes that best explains the data / latent class structure. This involves comparing models that vary by the number of classes.</p></li>
+<li><p>Determining latent class structure is not only based on statistical tests of fit, but also interpretability of the solution.</p></li>
+<li><p>relative sizes of classes is the latent class proportion : <span class="math display">\[\pi_v\]</span></p></li>
+<li><p>A latent class model with a sufficient number of latent classes is equivalent to an IRT</p></li>
+</ul>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<ul>
+<li><p>Measurement is a process by which one attempts to understand the nature of a variable by applying mathematical techniques. This results may not be numeric labels and may not involve a continuous variable.</p></li>
+<li><p>Manifest variable is an observed manifestation of one or more latent variables.</p></li>
+<li><p>A latent variable can be conceptualized as continuous, categorical, or a combination of the two.</p></li>
+<li><p>It is necessary to operationalize the variable(s) of interest [i.e., provide operational definitions] as part of the measurement process.</p></li>
+<li><p>Measurement involves assessing how much information the measure yields about the participants (reliability) and how well the measure reflect the latent variable (i.e, validity).</p></li>
+<li><p>When IRT is appropriate and there is model-data fit, IRT offers more advantages over CTT: person location estimates are invariant with respect to the instrument, precision of estimates is known at the individual level and not just at the group level, and and item parameters transcend the sample used in their estimation.</p></li>
 </ul>
 </section>
 </section>

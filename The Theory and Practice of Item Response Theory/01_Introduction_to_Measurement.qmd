@@ -52,7 +52,7 @@
 
 -   Steven's levels of measurements or Coombs's taxonomy : measurements have certain inherent properties that affect how we interpret their information
 
--   *Ratio / Internval / Ordinal / Nominal*
+-   *Ratio / Interval / Ordinal / Nominal*
 
 ## Item Response Theory
 
@@ -94,7 +94,7 @@
 
 -   @eq-1 is known as the true score model.
 
--   Given that the error scores are considered to be random and $\mu_i=\varepsilon(X_i)$ , then it follows that the mean error of an indivdiual across all indeependent infinite administrations is zero.
+-   Given that the error scores are considered to be random and $\mu_i=\varepsilon(X_i)$ , then it follows that the mean error of an individual across all independent infinite administrations is zero.
 
 -   $\mu_i$ is also represented by $T$ . $T$ represents the person's true score. Not meant to represent "truth", so we refer to it as trait score.
 
@@ -104,15 +104,15 @@
 
 -   The IRT person latent trait $\theta$ and the CTT person trait characterization are related based on the assumption of parallel forms for an instrument. Note: **parallel forms** (also called **equivalent forms** or **alternate forms**) refer to two or more versions of a test that measure the same psychological construct with **equal difficulty and reliability.** So each item has the same response function on all the forms.
 
--   The expected propritons of 1s or the expected true score $\varepsilon (T)$ across the parallel forms is the average probability of a response of 1 on the instrument given the person's latent trait and an IRT model. So, the IRT $\theta$ is is the same as $\varepsilon (T)$ but has a different scale. The scale for $\varepsilon (T)$ is 0 to 1 but for $\theta$ it is $-\infty$ to $\infty$ . They are related by a monotonous increasing transformation.
+-   The expected proportions of 1s or the expected true score $\varepsilon (T)$ across the parallel forms is the average probability of a response of 1 on the instrument given the person's latent trait and an IRT model. So, the IRT $\theta$ is is the same as $\varepsilon (T)$ but has a different scale. The scale for $\varepsilon (T)$ is 0 to 1 but for $\theta$ it is $-\infty$ to $\infty$ . They are related by a monotonous increasing transformation.
 
--   3 assumptions for CTT : (1) the errors are uncorrelated with the trait score ; (2) the errors on one instrument are not correlated with the trait scores on a different instrument ; (3) the errors on one instruemnt are not corerelted with the error scores on a different instrument. These are "weak" assumptions because they are likely to be met by data ; unlike the "strong" assumptions of IRT.
+-   3 assumptions for CTT : (1) the errors are uncorrelated with the trait score ; (2) the errors on one instrument are not correlated with the trait scores on a different instrument ; (3) the errors on one instrument are not correlated with the error scores on a different instrument. These are "weak" assumptions because they are likely to be met by data ; unlike the "strong" assumptions of IRT.
 
 -   CTT assumptions + @eq-1 form the basis of the concepts or reliability and validity coefficient.
 
 -   Index of reliability of a measurement: correlation of observed scores and trait scores
 
--   population relaibility of instrument using variance of trait scores and observed scores: $$\rho_{XX'}= \frac{\sigma_T^2}{\sigma_X^2}$$ {#eq-3}
+-   population reliability of instrument using variance of trait scores and observed scores: $$\rho_{XX'}= \frac{\sigma_T^2}{\sigma_X^2}$$ {#eq-3}
 
 -   The trait score variance is unknown, so we can only estimate $\rho_{XX'}$ (example: coefficient alpha)
 
@@ -120,4 +120,48 @@
 
     $$\sigma_E^2=\sigma_X^2(1-\rho_{XX'})$$ {#eq-4}
 
--   
+-   Standard Error of Measurement (SEM) is the square root of $$\sigma_E^2$$ . It is the standard deviation of the errors of measurement associated with the observed scores.
+
+-   Because the latent trait is unknown, so error is unknown, so @eq-1 and @eq-2 have two unknowns. This means that we cannot disprove them.
+
+-   Unlike CTT, in IRT, we can engage in model-data fit analysis. In CTT, we assume the model to be true.
+
+-   In CTT, person measurement is dependent on the instrument's characteristics. The heterogeneity or lack thereof of the observed scores affects the reliability an SEM.
+
+-   @eq-3 and @eq-4 are not solely properties of the instrument, but are affected by the sample.
+
+-   This means that Thurstone's idea of invariance does not exist in CTT. In contrast, in IRT, it is possible to have invariance of both person and item characterizations.
+
+## Latent Class Analysis
+
+-   In LCA, unlike IRT, the latent variable is assumed to be categorical.
+
+-   The latent variable consists of a set of mutually exclusive and exhaustive latent classes.
+
+-   The comparison of individuals involves comparing their latent class membership rather than their location on a continuous latent variable.
+
+-   Mixture Models can conceive of situations where we have both latent classes and continuous continuum : LCA+IRT
+
+-   Both LCA and IRT are cases of LSA (Latent Structure Analysis)
+
+-   LCA determines the number of latent classes that best explains the data / latent class structure. This involves comparing models that vary by the number of classes.
+
+-   Determining latent class structure is not only based on statistical tests of fit, but also interpretability of the solution.
+
+-   relative sizes of classes is the latent class proportion : $$\pi_v$$
+
+-   A latent class model with a sufficient number of latent classes is equivalent to an IRT
+
+## Summary
+
+-   Measurement is a process by which one attempts to understand the nature of a variable by applying mathematical techniques. This results may not be numeric labels and may not involve a continuous variable.
+
+-   Manifest variable is an observed manifestation of one or more latent variables.
+
+-   A latent variable can be conceptualized as continuous, categorical, or a combination of the two.
+
+-   It is necessary to operationalize the variable(s) of interest \[i.e., provide operational definitions\] as part of the measurement process.
+
+-   Measurement involves assessing how much information the measure yields about the participants (reliability) and how well the measure reflect the latent variable (i.e, validity).
+
+-   When IRT is appropriate and there is model-data fit, IRT offers more advantages over CTT: person location estimates are invariant with respect to the instrument, precision of estimates is known at the individual level and not just at the group level, and and item parameters transcend the sample used in their estimation.
